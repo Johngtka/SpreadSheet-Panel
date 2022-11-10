@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    background-image: url("./img/pink-flowers.png");
+}
+header{
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-top: 2px solid #000000;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0000ff;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 160px;
+}
+main{
+    border: 2px solid #000000;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+    background-color: #ff0000;
+}
+.meme{
+    list-style-type: none;
+    display: inline;
+}
+#screen{
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    height:20px;
+    display: inline-block;
+}
+#l1{
+    display: inline;
+    margin-right: 10px;
+    width: 100px;
+    height: 20px;
+}
+#l2{
+    display: inline;
+    margin-left: 10px;
+    width: 100px;
+    height: 20px;
+}
+button{
+    width:40px;
+    height: 40px;
+}
+p{
+    background-color: #ffffff;
+    border-top: 2px solid #000000;
+}
+#do input[type="text"]{
+    text-align: center;
+    width: 80px;
+    border-radius: 30px;
+    border: 2px solid #000000;
+}
+.dzial{
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    border: 2px solid #5076cc;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-family: serif;
+}
+.dzial:hover{
+    opacity: 0.5;
+    border: 2px solid #ffff00;
+}
