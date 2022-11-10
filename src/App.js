@@ -63,7 +63,7 @@ class App extends React.Component {
             <button className='dzial' onClick={() => this.setState({mode: 3})}>/</button><br></br>
             <button className='dzial' onClick={() => this.setState({mode: 4})}>;-)</button><br></br>
           <div style={{fontSize:40, backgroundColor:"#ffffff", height: 50, marginLeft:"auto", marginRight:"auto", marginTop:20, borderTop: '2px solid #000000',borderBottom: '2px solid #000000'}} id="wynik">{this.state.result}</div><br></br>
-          <p style={{margin: 0}}><span style={{color: '#ff0000'}}><b>*</b></span> - <i>" Wpisz liczbę 1 i 2 wybierz działanie<br></br> i kliknij = "</i></p>
+          <p style={{margin: 0}}><span style={{color: '#ff0000'}}><b>*</b></span> - <i><b>" Wpisz liczbę 1 i 2 wybierz działanie<br></br> i kliknij = "</b></i></p>
         </main>
       </div>
     );
