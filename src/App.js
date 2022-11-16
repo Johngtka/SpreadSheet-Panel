@@ -43,7 +43,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header>React Calculator</header>
+        <header>React Calculator<br></br>Basic Calculator written in React</header>
         <main>
           <div id="screen">
             <div id="do">
