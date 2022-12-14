@@ -28,6 +28,18 @@ main {
     background-color: #ff0000;
 }
 
+@media(max-width: 600px) {
+    header {
+        border: 0;
+        width: 100%;
+    }
+
+    main {
+        border: 0;
+        width: 100%;
+    }
+}
+
 .meme {
     list-style-type: none;
     display: inline;
