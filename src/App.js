@@ -44,7 +44,7 @@ class App extends React.Component {
         result: res
       })
     } else {
-      req.innerHTML = 'there is no value';
+      req.innerHTML = '<i id="err">no value in any of the inputs</i>';
     }
   }
   render() {

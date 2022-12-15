@@ -42,6 +42,16 @@ main {
         border: 0;
         width: 100%;
     }
+
+    #err {
+        font-size: 25px;
+    }
+}
+
+@media(min-width:600px) {
+    #err {
+        font-size: 30px;
+    }
 }
 
 .meme {
