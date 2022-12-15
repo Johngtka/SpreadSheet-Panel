@@ -1,5 +1,4 @@
 import React from 'react';
-
 import "./index.css";
 
 class App extends React.Component {
@@ -7,11 +6,10 @@ class App extends React.Component {
     mode: 0,
     result: ''
   }
-
   calc() {
     var res
-    var l1 = parseInt(document.getElementById('l1').value)
-    var l2 = parseInt(document.getElementById('l2').value)
+    var l1 = parseInt(document.querySelector('#l1').value)
+    var l2 = parseInt(document.querySelector('#l2').value)
     switch (this.state.mode) {
       case 0:
         res = l1 + l2
