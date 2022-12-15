@@ -8,38 +8,44 @@ class App extends React.Component {
   }
   calc() {
     var res
-    var l1 = parseInt(document.querySelector('#l1').value)
-    var l2 = parseInt(document.querySelector('#l2').value)
-    if (l1.length === 0 || l2.length === 0) {
-      console.log('dddfsdf')
+    var l1 = document.querySelector('#l1').value
+    var l2 = document.querySelector('#l2').value
+    const req = document.querySelector('#wynik')
+    l1 = l1.trim()
+    l2 = l2.trim()
+    if (!!l1 && !!l2) {
+      l1 = parseInt(l1)
+      l2 = parseInt(l2)
+      switch (this.state.mode) {
+        case 0:
+          res = l1 + l2
+          break
+        case 1:
+          res = l1 - l2
+          break
+        case 2:
+          res = l1 * l2
+          break
+        case 3:
+          if (l1 === 0 || l2 === 0) {
+            res = "Nie można"
+          } else {
+            res = l1 / l2
+          }
+          break
+        case 4:
+          const meme = [l1, l2]
+          res = meme.map((number) => <li class="meme">{number}</li>);
+          break
+        default:
+          break
+      }
+      this.setState({
+        result: res
+      })
+    } else {
+      req.innerHTML = 'there is no value';
     }
-    switch (this.state.mode) {
-      case 0:
-        res = l1 + l2
-        break
-      case 1:
-        res = l1 - l2
-        break
-      case 2:
-        res = l1 * l2
-        break
-      case 3:
-        if (l1 === 0 || l2 === 0) {
-          res = "Nie można"
-        } else {
-          res = l1 / l2
-        }
-        break
-      case 4:
-        const meme = [l1, l2]
-        res = meme.map((number) => <li class="meme">{number}</li>);
-        break
-      default:
-        break
-    }
-    this.setState({
-      result: res
-    })
   }
   render() {
     return (
