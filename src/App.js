@@ -11,8 +11,8 @@ class App extends React.Component {
     var l1 = document.querySelector('#l1').value
     var l2 = document.querySelector('#l2').value
     const req = document.querySelector('#wynik')
-    l1 = l1.trim()
-    l2 = l2.trim()
+    l1 = l1.replaceAll(' ', '')
+    l2 = l2.replaceAll(' ', '')
     if (!!l1 && !!l2) {
       l1 = parseInt(l1)
       l2 = parseInt(l2)
