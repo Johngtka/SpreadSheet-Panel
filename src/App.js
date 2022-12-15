@@ -10,6 +10,9 @@ class App extends React.Component {
     var res
     var l1 = parseInt(document.querySelector('#l1').value)
     var l2 = parseInt(document.querySelector('#l2').value)
+    if (l1.length === 0 || l2.length === 0) {
+      console.log('dddfsdf')
+    }
     switch (this.state.mode) {
       case 0:
         res = l1 + l2
