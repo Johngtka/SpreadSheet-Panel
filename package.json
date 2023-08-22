@@ -20,7 +20,7 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "format": "prettier --write ./**/*.{js,html,css}",
-        "deploy": "gh-pages -d build && git push ."
+        "deploy": "gh-pages -d build && git commit -m '.' && git push origin master"
     },
     "eslintConfig": {
         "extends": [
